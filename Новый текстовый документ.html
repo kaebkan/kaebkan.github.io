@@ -1,0 +1,185 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+</head>
+
+<body>
+  <div class="conteiner">
+  <vr>
+    <div class="header">
+      <div class="photo">
+        <img src="robot.jpg" />
+      </div>
+      <div class="author">
+        <div class="info_box">
+		<h3 class="title-example">Беляев Иван Игоревич</h3>
+          <p>
+            <h3 class="title-example">Группа АДБ-19-08</h3>
+          </p>
+        </div>
+      </div>
+    </div>
+    <vr>
+    <div class="skills">
+      <h3>Обо мне</h3>
+      <p>
+        Являюсь студентом 3-его курса Московского государственного технологического университета Станкин. 
+      </p>
+	  <vr>
+      <h3>Образование</h3>
+
+	  
+      <p>
+        Среднее полное, неоконченное высшее.
+      </p>
+      <vr>
+      <h3>Контакты</h3>
+      
+      <ul class="contacts">
+        <li>
+          <img src="gmail.jpg" /><a>kaebkan@gmail.com</a>
+        </li>
+        <li>
+          <img src="tele2.jpg" /><a >+903285****</a>
+        </li>
+      </ul>
+   
+    </div>
+<vr>
+  </div>
+</body>
+<style>
+* {
+  padding: 0;
+}
+
+body {
+  font: 16px 'Roboto';
+}
+
+.conteiner {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.photo,
+.author {
+  display: inline-block;
+}
+
+.author {
+  margin-left: 15px;
+  vertical-align: top;
+}
+
+.info_box span {
+  color: #95a5a6
+}
+
+
+/* задаем свойства заголовку */
+
+h3 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+
+/* задаем свойства горизонтальной линии */
+
+hr {
+  border: none;
+  color: #eee;
+  background-color: #eee;
+  height: 1px;
+}
+
+vr {
+border-left: 800px solid #808080;
+    height: 500px;
+}
+
+
+/* задаем свойства тексту */
+
+p {
+  text-align: left;
+  color: #34495e;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+li {
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+img {
+ 
+  vertical-align: middle;
+  padding-right: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+}
+
+.contacts {
+  text-align: right;
+  
+}
+.catside a:hover {
+background: green;
+color: #fff;
+}
+
+h3.title-example{
+    font-size: 1em; /* Размер шрифта */
+    color: #5a5a5a; /* Цвет заголовка */
+    text-align: center; /* Текст по центру */
+}
+/*  CSS код для линии над заголовком */
+h3.title-example:before {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #f66d52; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 0 auto 10px; /* Отступ с боков по центру и снизу */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+h3.title-example:hover:before {
+    width: 250px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}
+/*  CSS код для линии под заголовком */
+h3.title-example:after {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #f66d52; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 10px auto 0; /* Отступ с боков по центру и сверху */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+h3.title-example:hover:after {
+    width: 250px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}
+     
+</style>
